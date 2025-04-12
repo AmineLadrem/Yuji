@@ -1,0 +1,204 @@
+2025-04-12 16:05:17,357:INFO:discord.client: logging in using static token
+2025-04-12 16:05:18,359:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b3728b840f680c17640dd06033863899).
+2025-04-12 16:05:20,384:INFO:root: Bot connected as Steve#6048 (ID: 1360600922635370557)
+2025-04-12 16:05:28,087:INFO:root: Message from awpxr in Steve Bot (Channel: general): "cccc"
+2025-04-12 16:07:56,318:INFO:discord.client: logging in using static token
+2025-04-12 16:07:57,404:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 33fe50f74cfdeade6f340637e0bbf89d).
+2025-04-12 16:07:59,443:INFO:root: Bot connected as Steve#6048 (ID: 1360600922635370557)
+2025-04-12 16:08:02,276:INFO:root: Message from awpxr in Steve Bot (Channel: general): "ccc"
+2025-04-12 16:08:43,621:INFO:root: Member joined: __deez__nuts__ (ID: 1330177812228735017) in Steve Bot
+2025-04-12 16:08:43,662:INFO:root: Message from __deez__nuts__ in Steve Bot (Channel: general): ""
+2025-04-12 16:09:03,242:INFO:root: Member left: __deez__nuts__ (ID: 1330177812228735017) in Steve Bot
+2025-04-12 16:13:15,028:INFO:discord.client: logging in using static token
+2025-04-12 16:13:15,986:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: ea300becd7173ed9e4df0aa160697edf).
+2025-04-12 16:13:18,005:INFO:root: Bot connected as Steve#6048 (ID: 1360600922635370557)
+2025-04-12 16:13:28,857:INFO:root: Member joined: __deez__nuts__ (ID: 1330177812228735017) in Steve Bot
+2025-04-12 16:13:28,918:INFO:root: Message from __deez__nuts__ in Steve Bot (Channel: general): ""
+2025-04-12 16:13:29,480:INFO:root: Member update in Steve Bot: __deez__nuts__ -> __deez__nuts__
+2025-04-12 19:45:26,524:INFO:discord.gateway: Shard ID None has successfully RESUMED session ea300becd7173ed9e4df0aa160697edf.
+2025-04-12 20:13:35,445:INFO:discord.gateway: Shard ID None has successfully RESUMED session ea300becd7173ed9e4df0aa160697edf.
+2025-04-12 23:42:46,059:INFO:discord.client: logging in using static token
+2025-04-12 23:42:47,056:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 960c703c9d5cb0dfffb8c51a5c5f1d88).
+2025-04-12 23:42:49,068:INFO:root: Bot connected as Steve#6048 (ID: 1360600922635370557)
+2025-04-12 23:43:28,743:INFO:root: Message from __deez__nuts__ in Steve Bot (Channel: general): "heyyy"
+2025-04-12 23:45:52,853:INFO:discord.client: logging in using static token
+2025-04-12 23:45:53,887:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: bd964267c6f945a57329f15ced09b3f6).
+2025-04-12 23:45:55,897:INFO:root: Bot connected as Steve#6048 (ID: 1360600922635370557)
+2025-04-12 23:45:57,307:INFO:root: __deez__nuts__ joined voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-12 23:46:00,798:INFO:root: __deez__nuts__ left voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-12 23:46:07,613:INFO:root: Message from __deez__nuts__ in Steve Bot (Channel: general): "heyyy"
+2025-04-12 23:49:29,890:INFO:discord.client: logging in using static token
+2025-04-12 23:49:30,997:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b769fd1786521e9c91c1dec79602fdf8).
+2025-04-12 23:49:32,356:INFO:root: __deez__nuts__ joined voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-12 23:49:33,014:INFO:root: Bot connected as Steve#6048 (ID: 1360600922635370557)
+2025-04-12 23:49:35,538:INFO:root: Message from __deez__nuts__ in Steve Bot (Channel: general): "!play never gonna give you up"
+2025-04-12 23:49:35,539:ERROR:discord.ext.commands.bot: Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "play" is not found
+2025-04-12 23:52:44,274:INFO:root: Music cog initialized.
+2025-04-12 23:52:44,275:INFO:root: Music cog loaded successfully.
+2025-04-12 23:52:44,275:INFO:discord.client: logging in using static token
+2025-04-12 23:52:45,353:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 262ef33150a1e74b89d096971a213623).
+2025-04-12 23:52:47,356:INFO:root: Bot connected as Steve#6048 (ID: 1360600922635370557)
+2025-04-12 23:52:51,913:INFO:root: Message from __deez__nuts__ in Steve Bot (Channel: general): "!play never gonna give you up"
+2025-04-12 23:52:51,914:ERROR:discord.ext.commands.bot: Ignoring exception in command play
+Traceback (most recent call last):
+  File "C:\Users\awpxr\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\space-work\Steve\cogs\music.py", line 106, in play
+    await ctx.author.voice.channel.connect()
+  File "C:\Users\awpxr\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\abc.py", line 1984, in connect
+    voice: T = cls(client, self)
+               ~~~^^^^^^^^^^^^^^
+  File "C:\Users\awpxr\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\voice_client.py", line 220, in __init__
+    raise RuntimeError("PyNaCl library needed in order to use voice")
+RuntimeError: PyNaCl library needed in order to use voice
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\awpxr\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ext\commands\bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\awpxr\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\awpxr\AppData\Local\Programs\Python\Python313\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: RuntimeError: PyNaCl library needed in order to use voice
+2025-04-12 23:53:56,928:INFO:root: Music cog initialized.
+2025-04-12 23:53:56,928:INFO:root: Music cog loaded successfully.
+2025-04-12 23:53:56,928:INFO:discord.client: logging in using static token
+2025-04-12 23:53:57,989:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 77539502dbd733cf7b3569daca40424d).
+2025-04-12 23:53:59,995:INFO:root: Bot connected as Steve#6048 (ID: 1360600922635370557)
+2025-04-12 23:54:02,212:INFO:root: Message from __deez__nuts__ in Steve Bot (Channel: general): "!play never gonna give you up"
+2025-04-12 23:54:02,213:INFO:discord.voice_state: Connecting to voice...
+2025-04-12 23:54:02,214:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2025-04-12 23:54:02,356:INFO:root: Steve#6048 joined voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-12 23:54:02,467:INFO:discord.voice_state: Voice handshake complete. Endpoint found: milan6945.discord.media
+2025-04-12 23:54:02,747:INFO:discord.voice_state: Voice connection complete.
+2025-04-12 23:54:06,283:INFO:root: awpxr joined voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-12 23:54:06,646:ERROR:root: Error in play command: ERROR: Signature extraction failed: Traceback (most recent call last):
+  File "C:\Users\awpxr\AppData\Local\Programs\Python\Python313\Lib\site-packages\youtube_dl\extractor\youtube.py", line 1360, in _decrypt_signature
+    func = self._extract_signature_function(
+        video_id, player_url, s
+    )
+  File "C:\Users\awpxr\AppData\Local\Programs\Python\Python313\Lib\site-packages\youtube_dl\extractor\youtube.py", line 1274, in _extract_signature_function
+    res = self._parse_sig_js(code)
+  File "C:\Users\awpxr\AppData\Local\Programs\Python\Python313\Lib\site-packages\youtube_dl\extractor\youtube.py", line 1343, in _parse_sig_js
+    initial_function = jsi.extract_function(funcname)
+  File "C:\Users\awpxr\AppData\Local\Programs\Python\Python313\Lib\site-packages\youtube_dl\jsinterp.py", line 245, in extract_function
+    raise ExtractorError('Could not find JS function %r' % funcname)
+youtube_dl.utils.ExtractorError: Could not find JS function 'decodeURIComponent'
+ (caused by ExtractorError("Could not find JS function 'decodeURIComponent'"))
+2025-04-12 23:54:46,932:INFO:root: __deez__nuts__ left voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-12 23:54:48,227:INFO:root: __deez__nuts__ joined voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-12 23:54:49,971:INFO:root: awpxr left voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-12 23:55:39,533:INFO:root: Music cog initialized.
+2025-04-12 23:55:39,533:INFO:root: Music cog loaded successfully.
+2025-04-12 23:55:39,533:INFO:discord.client: logging in using static token
+2025-04-12 23:55:40,558:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: a15e70f6bef7a2a9f4c9ba1394512a98).
+2025-04-12 23:55:42,575:INFO:root: Bot connected as Steve#6048 (ID: 1360600922635370557)
+2025-04-12 23:55:45,621:INFO:root: Message from __deez__nuts__ in Steve Bot (Channel: general): "!disc"
+2025-04-12 23:56:00,945:INFO:root: Steve#6048 left voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-12 23:56:12,342:INFO:root: Message from __deez__nuts__ in Steve Bot (Channel: general): "!play never gonna give you up"
+2025-04-12 23:56:12,343:INFO:discord.voice_state: Connecting to voice...
+2025-04-12 23:56:12,344:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2025-04-12 23:56:12,481:INFO:root: Steve#6048 joined voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-12 23:56:12,589:INFO:discord.voice_state: Voice handshake complete. Endpoint found: milan6945.discord.media
+2025-04-12 23:56:12,793:INFO:discord.voice_state: Voice connection complete.
+2025-04-12 23:56:12,793:INFO:root: Connected to voice channel: General
+2025-04-12 23:56:17,938:INFO:root: Started playing: Rick Astley - Never Gonna Give You Up (Official Music Video)
+2025-04-12 23:56:18,921:INFO:root: awpxr joined voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-12 23:56:38,777:INFO:discord.voice_state: The voice handshake is being terminated for Channel ID 1360601949149331630 (Guild ID 1360601947178012683)
+2025-04-12 23:56:38,777:INFO:root: Message from __deez__nuts__ in Steve Bot (Channel: general): "!disc"
+2025-04-12 23:56:38,781:INFO:discord.player: ffmpeg process 23112 has not terminated. Waiting to terminate...
+2025-04-12 23:56:38,932:INFO:root: Steve#6048 left voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-12 23:56:38,932:INFO:root: Disconnected from voice channel in Steve Bot
+2025-04-12 23:56:39,505:INFO:discord.player: ffmpeg process 23112 should have terminated with a return code of 1.
+2025-04-12 23:58:26,053:INFO:root: Music cog initialized.
+2025-04-12 23:58:26,054:INFO:root: Music cog loaded successfully.
+2025-04-12 23:58:26,054:INFO:discord.client: logging in using static token
+2025-04-12 23:58:26,975:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 1aa6a2ec4e715679b257b6b0bc398c3c).
+2025-04-12 23:58:28,989:INFO:root: Bot connected as Steve#6048 (ID: 1360600922635370557)
+2025-04-12 23:58:32,189:INFO:root: __deez__nuts__ left voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-12 23:58:48,139:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!play LADY GAGA - JUDAS"
+2025-04-12 23:58:48,139:INFO:discord.voice_state: Connecting to voice...
+2025-04-12 23:58:48,140:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2025-04-12 23:58:48,279:INFO:root: Steve#6048 joined voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-12 23:58:48,389:INFO:discord.voice_state: Voice handshake complete. Endpoint found: milan6945.discord.media
+2025-04-12 23:58:48,654:INFO:discord.voice_state: Voice connection complete.
+2025-04-12 23:58:48,654:INFO:root: Connected to voice channel: General
+2025-04-12 23:58:54,622:INFO:root: Started playing: Lady Gaga - Judas (Official Music Video)
+2025-04-12 23:59:07,373:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!play Timeless"
+2025-04-12 23:59:11,983:INFO:root: Added to queue: The Weeknd, Playboi Carti - Timeless
+2025-04-12 23:59:16,064:INFO:discord.player: ffmpeg process 9212 has not terminated. Waiting to terminate...
+2025-04-12 23:59:16,085:INFO:discord.player: ffmpeg process 13004 has not terminated. Waiting to terminate...
+2025-04-12 23:59:17,137:INFO:discord.player: ffmpeg process 9212 should have terminated with a return code of 1.
+2025-04-12 23:59:17,138:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!stop"
+2025-04-12 23:59:17,531:INFO:root: Stopped music in Steve Bot
+2025-04-12 23:59:17,676:INFO:discord.player: ffmpeg process 13004 should have terminated with a return code of 1.
+2025-04-12 23:59:21,442:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!resume"
+2025-04-13 00:00:36,429:INFO:root: Music cog initialized.
+2025-04-13 00:00:36,429:INFO:root: Music cog loaded successfully.
+2025-04-13 00:00:36,430:INFO:discord.client: logging in using static token
+2025-04-13 00:00:37,349:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 5fbd56735bf32c534dc46e1ed8bc19d4).
+2025-04-13 00:00:39,353:INFO:root: Bot connected as Steve#6048 (ID: 1360600922635370557)
+2025-04-13 00:00:51,066:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!play LADY GAGA - JUDAS (lyrics)"
+2025-04-13 00:00:51,067:INFO:discord.voice_state: Connecting to voice...
+2025-04-13 00:00:51,068:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2025-04-13 00:00:51,223:INFO:root: Voice state updated for Steve#6048 in Steve Bot
+2025-04-13 00:00:51,305:INFO:discord.voice_state: Voice handshake complete. Endpoint found: milan6945.discord.media
+2025-04-13 00:00:51,481:INFO:discord.voice_state: Voice connection complete.
+2025-04-13 00:00:51,482:INFO:root: Connected to voice channel: General
+2025-04-13 00:00:59,579:INFO:root: Started playing: Lady Gaga - Judas (Lyrics)
+2025-04-13 00:01:05,422:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!play Timeless guitar remix"
+2025-04-13 00:01:11,314:INFO:root: Added to queue: Timeless Guitar Remix [Tik Tok ver.]
+2025-04-13 00:01:13,590:INFO:discord.player: ffmpeg process 4844 has not terminated. Waiting to terminate...
+2025-04-13 00:01:13,599:INFO:discord.player: ffmpeg process 12268 has not terminated. Waiting to terminate...
+2025-04-13 00:01:14,427:INFO:discord.player: ffmpeg process 4844 should have terminated with a return code of 1.
+2025-04-13 00:01:14,431:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!stop"
+2025-04-13 00:01:14,693:INFO:root: Stopped music in Steve Bot and cleared the queue.
+2025-04-13 00:01:15,584:INFO:discord.player: ffmpeg process 12268 should have terminated with a return code of 1.
+2025-04-13 00:01:18,685:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!resume"
+2025-04-13 00:03:32,911:INFO:root: Music cog initialized.
+2025-04-13 00:03:32,912:INFO:root: Music cog loaded successfully.
+2025-04-13 00:03:32,912:INFO:discord.client: logging in using static token
+2025-04-13 00:03:34,023:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 51020bfeb5249dc258809212b3e15297).
+2025-04-13 00:03:36,039:INFO:root: Bot connected as Steve#6048 (ID: 1360600922635370557)
+2025-04-13 00:03:42,626:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!play LADY GAGA - JUDAS (lyrics)"
+2025-04-13 00:03:42,627:INFO:discord.voice_state: Connecting to voice...
+2025-04-13 00:03:42,629:INFO:discord.voice_state: Starting voice handshake... (connection attempt 1)
+2025-04-13 00:03:42,777:INFO:root: Voice state updated for Steve#6048 in Steve Bot
+2025-04-13 00:03:42,871:INFO:discord.voice_state: Voice handshake complete. Endpoint found: milan6945.discord.media
+2025-04-13 00:03:43,040:INFO:discord.voice_state: Voice connection complete.
+2025-04-13 00:03:43,040:INFO:root: Connected to voice channel: General
+2025-04-13 00:03:50,998:INFO:root: Started playing: Lady Gaga - Judas (Lyrics)
+2025-04-13 00:03:51,959:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!play Timeless guitar remix"
+2025-04-13 00:03:58,840:INFO:root: Added to queue: Timeless Guitar Remix [Tik Tok ver.]
+2025-04-13 00:04:03,085:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!pause"
+2025-04-13 00:04:03,360:INFO:root: Paused music in Steve Bot
+2025-04-13 00:04:07,752:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!resume"
+2025-04-13 00:04:08,016:INFO:root: Resumed music in Steve Bot
+2025-04-13 00:04:14,606:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!queue"
+2025-04-13 00:04:18,291:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!skip"
+2025-04-13 00:04:18,292:INFO:discord.player: ffmpeg process 6164 has not terminated. Waiting to terminate...
+2025-04-13 00:04:18,509:INFO:root: Skipped track in Steve Bot
+2025-04-13 00:04:18,677:INFO:root: Started playing: Timeless Guitar Remix [Tik Tok ver.]
+2025-04-13 00:04:19,870:INFO:discord.player: ffmpeg process 6164 should have terminated with a return code of 1.
+2025-04-13 00:05:32,444:INFO:discord.player: ffmpeg process 19176 successfully terminated with return code of 0.
+2025-04-13 00:05:52,092:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!resume"
+2025-04-13 00:05:57,537:INFO:root: Message from awpxr in Steve Bot (Channel: general): "!queue"
+2025-04-13 00:09:56,667:INFO:root: Member update in Steve Bot: Steve#6048 -> Steve#6048
+2025-04-13 00:10:03,387:INFO:root: Member update in Steve Bot: Yuji#6048 -> Yuji#6048
+2025-04-13 00:11:35,603:INFO:root: awpxr left voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-13 00:11:55,254:INFO:root: awpxr joined voice channel "General" (ID: 1360601949149331630) in Steve Bot
+2025-04-13 00:12:59,276:INFO:root: Member left: __deez__nuts__ (ID: 1330177812228735017) in Steve Bot
+2025-04-13 00:13:20,069:INFO:root: Music cog initialized.
+2025-04-13 00:13:20,069:INFO:root: Music cog loaded successfully.
+2025-04-13 00:13:20,070:INFO:discord.client: logging in using static token
+2025-04-13 00:13:21,198:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: b4c24db73a02bc9dc61f13a3a7f1e68e).
+2025-04-13 00:13:23,207:INFO:root: Bot connected as Yuji#6048 (ID: 1360600922635370557)
+2025-04-13 00:13:29,959:INFO:root: Member joined: __deez__nuts__ (ID: 1330177812228735017) in Steve Bot
+2025-04-13 00:13:30,047:INFO:root: Message from __deez__nuts__ in Steve Bot (Channel: general): ""
+2025-04-13 00:13:30,488:INFO:root: Member update in Steve Bot: __deez__nuts__ -> __deez__nuts__
+2025-04-13 00:14:30,444:INFO:root: Yuji#6048 left voice channel "General" (ID: 1360601949149331630) in Steve Bot

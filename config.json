@@ -1,0 +1,9 @@
+{
+    "prefix": "!",
+    "welcome_message": "Welcome to the server, {member}!",
+    "welcome_channel": "welcome",
+    "members_role_name": "Members",
+    "rules_channel": "rules",
+    "reminder_channel": "reminders"
+  }
+  
