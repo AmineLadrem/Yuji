@@ -22,10 +22,6 @@ ffmpeg_options = {
 ytdl = youtube_dl.YoutubeDL(ytdl_format_options)
 
 class YTDLSource(discord.PCMVolumeTransformer):
-    """
-    A helper class representing an audio source from YouTube.
-    It uses yt_dlp to extract audio info and creates a FFmpeg audio source.
-    """
     def __init__(self, source, *, data, volume=0.5):
         super().__init__(source, volume)
         self.data = data
@@ -34,9 +30,6 @@ class YTDLSource(discord.PCMVolumeTransformer):
 
     @classmethod
     async def from_url(cls, url, *, loop=None, stream=False):
-        """
-        Asynchronously extract audio info from a URL or search query.
-        """
         loop = loop or asyncio.get_event_loop()
         data = await loop.run_in_executor(None, lambda: ytdl.extract_info(url, download=not stream))
         
@@ -66,7 +59,6 @@ class Music(commands.Cog):
 
     @commands.command(name="join")
     async def join(self, ctx):
-        """Joins the voice channel of the command caller."""
         if ctx.author.voice:
             channel = ctx.author.voice.channel
             await channel.connect()
@@ -76,7 +68,6 @@ class Music(commands.Cog):
 
     @commands.command(name="leave")
     async def leave(self, ctx):
-        """Disconnects the bot from the voice channel and (optionally) preserves the queue."""
         if ctx.voice_client:
             await ctx.voice_client.disconnect()
             logging.info(f"Disconnected from voice channel in {ctx.guild.name}")
@@ -85,11 +76,9 @@ class Music(commands.Cog):
 
     @commands.command(name="disc")
     async def disc(self, ctx):
-        """Alias for disconnecting the bot (same as !leave)."""
         await self.leave(ctx)
 
     async def check_queue(self, ctx):
-        """Plays the next track in the queue if available unless a stop was requested."""
         guild_id = ctx.guild.id
         if self.stop_flags.get(guild_id, False):
             self.stop_flags[guild_id] = False
@@ -106,10 +95,6 @@ class Music(commands.Cog):
 
     @commands.command(name="play")
     async def play(self, ctx, *, query: str):
-        """
-        Plays audio based on the provided query (a YouTube URL or search query).
-        If nothing is playing, playback starts immediately; otherwise the track is queued.
-        """
         if not ctx.author.voice:
             return await ctx.send("Please join a voice channel first.")
 
@@ -145,7 +130,6 @@ class Music(commands.Cog):
 
     @commands.command(name="pause")
     async def pause(self, ctx):
-        """Pauses the current track without clearing the queue."""
         if ctx.voice_client and ctx.voice_client.is_playing():
             ctx.voice_client.pause()
             await ctx.send("Music paused.")
@@ -165,10 +149,6 @@ class Music(commands.Cog):
 
     @commands.command(name="stop")
     async def stop(self, ctx):
-        """
-        Stops the current track without clearing the queue.
-        A stop flag is set to prevent auto-playing the next track.
-        """
         if ctx.voice_client and (ctx.voice_client.is_playing() or ctx.voice_client.is_paused()):
             self.stop_flags[ctx.guild.id] = True
             ctx.voice_client.stop()
@@ -179,10 +159,6 @@ class Music(commands.Cog):
 
     @commands.command(name="skip")
     async def skip(self, ctx):
-        """
-        Skips the current track.
-        The auto-play mechanism then checks the queue to play the next track.
-        """
         if ctx.voice_client and (ctx.voice_client.is_playing() or ctx.voice_client.is_paused()):
             ctx.voice_client.stop() 
             await ctx.send("Skipped the current track.")
@@ -192,7 +168,6 @@ class Music(commands.Cog):
 
     @commands.command(name="queue")
     async def queue_(self, ctx):
-        """Displays the current music queue."""
         guild_id = ctx.guild.id
         if guild_id in self.music_queues and self.music_queues[guild_id]:
             queue_list = "\n".join(f"{i+1}. {source.title}" for i, source in enumerate(self.music_queues[guild_id]))
@@ -202,7 +177,6 @@ class Music(commands.Cog):
 
     @commands.command(name="clearqueue")
     async def clearqueue(self, ctx):
-        """Clears the music queue."""
         self.music_queues[ctx.guild.id] = []
         await ctx.send("The music queue has been cleared.")
         logging.info(f"Cleared queue in {ctx.guild.name}")

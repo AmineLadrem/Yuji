@@ -18,6 +18,7 @@ async def main():
     await bot.load_extension("cogs.logger")
     await bot.load_extension("cogs.welcome")
     await bot.load_extension("cogs.music")
+    await bot.load_extension("cogs.reminder")
     await bot.start(TOKEN)
 
 if __name__ == "__main__":
