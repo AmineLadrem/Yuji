@@ -1,2 +1,3 @@
 id,user_id,name,remind_utc,tz,details,freq
 1,1330177812228735017,test,2025-05-02T22:18:00+00:00,Europe/Paris,tttttttt,daily
+2,1330177812228735017,test2,2025-05-03T21:11:00+00:00,Europe/Paris,aaaa,weekly

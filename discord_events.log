@@ -139,3 +139,8 @@ TypeError: can't compare offset-naive and offset-aware datetimes
 2025-05-02 00:17:21,595:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 9f9c7a7d613328c25ef95b05f99ac4af).
 2025-05-02 00:17:23,602:INFO:root: Bot connected as Yuji#6048 (ID: 1360600922635370557)
 2025-05-02 00:18:45,166:INFO:root: DM from __deez__nuts__: "www"
+2025-05-02 00:23:16,196:INFO:root: Music cog initialized.
+2025-05-02 00:23:16,197:INFO:root: Music cog loaded successfully.
+2025-05-02 00:23:16,260:INFO:discord.client: logging in using static token
+2025-05-02 00:23:17,281:INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 36b49f3dc72d3cc077371ac0581b1339).
+2025-05-02 00:23:19,297:INFO:root: Bot connected as Yuji#6048 (ID: 1360600922635370557)
